@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  	<servlet>
+    	<servlet-name>fooBar</servlet-name>
+    	<jsp-file>/Home.jsp</jsp-file> <!-- HomePage -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar</servlet-name>
+    	<url-pattern>/Home</url-pattern> <!-- HomePage URL -->
+	</servlet-mapping>
+  	
+  	<servlet>
+        <servlet-name>Check1</servlet-name>
+        <servlet-class>HomePage.LogIn</servlet-class> <!-- Login Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check1</servlet-name>
+        <url-pattern>/InvalidCredentials</url-pattern> <!-- Login Manager URL-->
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Check2</servlet-name>
+        <servlet-class>HomePage.SignOut</servlet-class> <!-- SignOut Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check2</servlet-name>
+        <url-pattern>/BackToHome</url-pattern> <!-- SignOut Manager URL-->
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>fooBar2</servlet-name>
+    	<jsp-file>/ForgotPassword.jsp</jsp-file> <!-- Account Recovery Manager -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar2</servlet-name>
+    	<url-pattern>/AccountRecovery</url-pattern> <!-- Account Recovery Manager URL -->
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>Check3</servlet-name>
+        <servlet-class>HomePage.SignUp</servlet-class> <!-- SignUp Home Redirect Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check3</servlet-name>
+        <url-pattern>/createAccount</url-pattern> <!-- SignUp Home Redirect Manager URL-->
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>Check4</servlet-name>
+        <servlet-class>OTPGeneration.Email</servlet-class> <!-- Email OTP -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check4</servlet-name>
+        <url-pattern>/VerifyOTP</url-pattern> 		<!-- Email OTP URL-->
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>fooBar4</servlet-name>
+    	<jsp-file>/CompleteSignUp.jsp</jsp-file> <!-- Complete SignUp Details/Create Account Manager -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar4</servlet-name>
+    	<url-pattern>/AccountCompletion</url-pattern> <!-- Complete SignUp Details/Create Account Manager URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar5</servlet-name>
+    	<jsp-file>/SignUpVerification.jsp</jsp-file> <!-- Account Verification Manager -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar5</servlet-name>
+    	<url-pattern>/AccountVerification</url-pattern> <!-- Account Verification Manager URL -->
+	</servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>fooBar3</servlet-name>
+    	<jsp-file>/Electronics.jsp</jsp-file> <!-- Category - Electronics -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar3</servlet-name>
+    	<url-pattern>/Electronics</url-pattern> <!-- Category - Electronics URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar9</servlet-name>
+    	<jsp-file>/Groceries.jsp</jsp-file> <!-- Category - Groceries -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar9</servlet-name>
+    	<url-pattern>/Groceries</url-pattern> <!-- Category - Groceries URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar10</servlet-name>
+    	<jsp-file>/Clothing.jsp</jsp-file> <!-- Category - Clothing -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar10</servlet-name>
+    	<url-pattern>/Clothing</url-pattern> <!-- Category - Clothing URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar11</servlet-name>
+    	<jsp-file>/Gadgets.jsp</jsp-file> <!-- Category - GadgetsAndAccessories -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar11</servlet-name>
+    	<url-pattern>/GadgetsAndAccessories</url-pattern> <!-- Category - GadgetsAndAccessories URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar12</servlet-name>
+    	<jsp-file>/HomeDecors.jsp</jsp-file> <!-- Category - HomeAndDecors -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar12</servlet-name>
+    	<url-pattern>/HomeAndDecors</url-pattern> <!-- Category - HomeAndDecors URL -->
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>Check5</servlet-name>
+        <servlet-class>Categories.AddToCart</servlet-class>  <!-- Cart Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check5</servlet-name>
+        <url-pattern>/ItemConfirmation</url-pattern> 		<!-- Cart Manager URL-->
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Check6</servlet-name>
+        <servlet-class>HomePage.UpdateDP</servlet-class>  <!-- Update DP Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check6</servlet-name>
+        <url-pattern>/updateDp</url-pattern> 		<!-- Update DP Manager URL-->
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Check7</servlet-name>
+        <servlet-class>HomePage.UpdateInfo</servlet-class>  <!-- Update Info Manager -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check7</servlet-name>
+        <url-pattern>/updateInfo</url-pattern> 		<!-- Update Info Manager URL-->
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>fooBar6</servlet-name>
+    	<jsp-file>/MyProfile.jsp</jsp-file> <!-- Profile -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar6</servlet-name>
+    	<url-pattern>/Profile</url-pattern> <!-- Profile URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar7</servlet-name>
+    	<jsp-file>/Shopss.jsp</jsp-file> <!-- Shops -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar7</servlet-name>
+    	<url-pattern>/Shops</url-pattern> <!-- Shops URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>fooBar8</servlet-name>
+    	<jsp-file>/Cart.jsp</jsp-file> <!-- Cart -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>fooBar8</servlet-name>
+    	<url-pattern>/Cart</url-pattern> <!-- Cart URL -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>thanks</servlet-name>
+    	<jsp-file>/Thankyou.jsp</jsp-file> <!-- Thank You -->
+	</servlet>
+
+	<servlet-mapping>
+   		<servlet-name>thanks</servlet-name>
+    	<url-pattern>/Thankyou</url-pattern> <!-- Thank You URL -->
+	</servlet-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>Home</welcome-file> <!-- Load Project with HomePage -->
+	</welcome-file-list>
+</web-app>
