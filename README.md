@@ -1,5 +1,5 @@
 # LetUsOrder
-LetUsOrder is an eStore where a user can explore categories and can add products to the cart so to buy them. Users even got the functionality to sell products from their own shops if any.
+LetUsOrder is an eStore where a user can explore multiple categories and can add products to the cart so to buy them. Users even got the functionality to sell products from their own shops if any.
 
 ### Technology Used: 
 HTML, CSS, JavaScript, jQuery, Bootstrap, along with JSP, Java Servlets, JDBC with MySQL, Jakarta's
